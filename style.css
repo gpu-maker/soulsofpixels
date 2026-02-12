@@ -1,0 +1,28 @@
+body{
+  margin:0;
+  background:black;
+  font-family:monospace;
+  overflow:hidden;
+}
+
+#gameContainer{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  position:relative;
+}
+
+canvas{
+  border:3px solid #222;
+  background:#111;
+  image-rendering:pixelated;
+}
+
+#ui{
+  position:absolute;
+  top:20px;
+  left:20px;
+  color:white;
+  pointer-events:none;
+}
