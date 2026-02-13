@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "soulsofpixels"
+version = "0.1.0"
+description = "Generate tiny deterministic pixel souls from text seeds"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  {name = "SoulsofPixels Contributors"}
+]
+license = {text = "MIT"}
+
+[project.scripts]
+soulsofpixels = "soulsofpixels.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+addopts = "-q"
